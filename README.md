@@ -1,19 +1,19 @@
 # Basket
 
-To start your Phoenix server:
+This project is to demonstrate SQL injection in Phoenix applications. To setup the database:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+```
+mix run priv/repo/seeds.exs
+```
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Routes:
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+http://localhost:4000/basket_a?min_q=0
+http://localhost:4000/basket_b?min_q=0 (fails)
+http://localhost:4000/basket_c?min_q=0
+http://localhost:4000/basket_d?min_q=0
+http://localhost:4000/basket_e?min_q=0
 
-## Learn more
+Example attack to get the secret fruit:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+http://localhost:4000/basket_e?min_q=0%20OR%201=1;%20--

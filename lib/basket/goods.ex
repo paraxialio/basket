@@ -14,13 +14,14 @@ defmodule Basket.Goods do
     |> Repo.all()
   end
 
-  #def b_get_fruit(min_q) do
-  #  from(
-  #    f in Fruit,
-  #    where: fragment("f0.quantity >= #{min_q} AND f0.secret = FALSE")
-  #  )
-  #  |> Repo.all()
-  #end
+  # Commented out because compilation fails with this function
+  # def b_get_fruit(min_q) do
+  #   from(
+  #     f in Fruit,
+  #     where: fragment("f0.quantity >= #{min_q} AND f0.secret = FALSE")
+  #   )
+  #   |> Repo.all()
+  # end
 
   def c_get_fruit(min_q) do
     min_q = String.to_integer(min_q)
@@ -46,6 +47,7 @@ defmodule Basket.Goods do
     end)
   end
 
+  # This is the only function vulnerable to SQL injection
   def e_get_fruit(min_q) do
     q = """
     SELECT f.id, f.name, f.quantity, f.secret
