@@ -17,9 +17,11 @@ defmodule BasketWeb.Router do
   scope "/", BasketWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-
     get "/basket_a", PageController, :basket_a
+    get "/basket_b", PageController, :basket_b
+    get "/basket_c", PageController, :basket_c
+    get "/basket_d", PageController, :basket_d
+    get "/basket_e", PageController, :basket_e
   end
 
   # Other scopes may use custom stacks.
