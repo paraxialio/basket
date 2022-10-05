@@ -1,0 +1,4 @@
+The SQL basket thing
+
+1. Start with the database migration
+
