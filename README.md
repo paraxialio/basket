@@ -1,6 +1,6 @@
 # Basket
 
-This project is to demonstrate SQL injection in Phoenix applications. To setup the database:
+Source code for [Detecting SQL Injection in Phoenix with Sobelow](https://paraxial.io/blog/sql-injection). To setup the database:
 
 ```
 mix run priv/repo/seeds.exs
