@@ -49,7 +49,7 @@ defmodule Basket.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:sobelow, "~> 0.11.1"}
+      {:paraxial, "~> 2.6.0"}
     ]
   end
 
