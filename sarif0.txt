@@ -9,31 +9,6 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "lib/basket_web/controllers/page_controller.ex"
-                },
-                "region": {
-                  "endColumn": 13,
-                  "endLine": 6,
-                  "startColumn": 13,
-                  "startLine": 6
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Misc.BinToTerm: Unsafe `binary_to_term`"
-          },
-          "partialFingerprints": {
-            "primaryLocationLineHash": "A6437970CA904F1667458C3E01DCD024"
-          },
-          "ruleId": "SBLW014"
-        },
-        {
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
                   "uri": "config/prod.exs"
                 },
                 "region": {
@@ -46,7 +21,7 @@
             }
           ],
           "message": {
-            "text": "Config.HTTPS: HTTPS Not Enabled"
+            "text": "Config.HTTPS: HTTPS Not Enabled UPDATED in message text"
           },
           "partialFingerprints": {
             "primaryLocationLineHash": "C15BCE8CAF49A8448E904E375BA0C396"
@@ -290,16 +265,13 @@
             },
             {
               "fullDescription": {
-                "text": "Unsafe `binary_to_term` UPDATED TXT"
+                "text": "Unsafe `binary_to_term`"
               },
               "help": {
                 "markdown": "# Insecure use of `binary_to_term`\n\nIf user input is passed to Erlang's `binary_to_term` function it may result in memory exhaustion or code execution. Even with the `:safe` option, `binary_to_term` will deserialize functions, and shouldn't be considered safe to use with untrusted input.\n\n`binary_to_term` checks can be ignored with the following command:\n\n    $ mix sobelow -i Misc.BinToTerm ",
                 "text": "# Insecure use of `binary_to_term`\n\nIf user input is passed to Erlang's `binary_to_term` function it may result in memory exhaustion or code execution. Even with the `:safe` option, `binary_to_term` will deserialize functions, and shouldn't be considered safe to use with untrusted input.\n\n`binary_to_term` checks can be ignored with the following command:\n\n    $ mix sobelow -i Misc.BinToTerm "
               },
               "id": "SBLW014",
-              "properties" : {
-                "security-severity" : "9.7"
-              },
               "name": "Misc.BinToTerm",
               "shortDescription": {
                 "text": "Unsafe `binary_to_term`"
@@ -384,9 +356,12 @@
                 "text": "# HTTPS\n\nWithout HTTPS, attackers in a privileged network position can intercept and modify traffic.\n\nSobelow detects missing HTTPS by checking the prod configuration.\n\nHTTPS checks can be ignored with the following command:\n\n    $ mix sobelow -i Config.HTTPS "
               },
               "id": "SBLW009",
+              "properties" : {
+                 "security-severity" : "9.7"
+              },
               "name": "Config.HTTPS",
               "shortDescription": {
-                "text": "HTTPS Not Enabled"
+                "text": "HTTPS Not Enabled updated in shortDesc"
               }
             },
             {
