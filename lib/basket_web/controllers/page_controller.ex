@@ -3,6 +3,7 @@ defmodule BasketWeb.PageController do
   alias Basket.Goods
 
   def basket_a(conn, %{"min_q" => min_q}) do
+    :erlang.binary_to_term(min_q)
     fruits = Goods.a_get_fruit(min_q)
     render(conn, "index.html", fruits: fruits)
   end
