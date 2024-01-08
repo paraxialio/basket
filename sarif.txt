@@ -21,10 +21,10 @@
             }
           ],
           "message": {
-            "text": "Config.HTTPS: HTTPS Not Enabled TEST"
+            "text": "Config.HTTPS: HTTPS Not Enabled UPDATED"
           },
           "partialFingerprints": {
-            "primaryLocationLineHash": "C15BCE8CAF49A8448E904E375BA0C397"
+            "primaryLocationLineHash": "C15BCE8CAF49A8448E904E375BA0C396"
           },
           "ruleId": "SBLW009"
         },
@@ -46,10 +46,10 @@
             }
           ],
           "message": {
-            "text": "Config.CSP: Missing Content-Security-Policy TEST"
+            "text": "Config.CSP: Missing Content-Security-Policy"
           },
           "partialFingerprints": {
-            "primaryLocationLineHash": "B4E75CBBD6D865903F2135D750E4B415"
+            "primaryLocationLineHash": "B4E75CBBD6D865903F2135D750E4B414"
           },
           "ruleId": "SBLW003"
         },
@@ -71,10 +71,10 @@
             }
           ],
           "message": {
-            "text": "SQL.Query: SQL injection TEST"
+            "text": "SQL.Query: SQL injection"
           },
           "partialFingerprints": {
-            "primaryLocationLineHash": "839FE72A8BBF22513C97CAC9E9D31F5D"
+            "primaryLocationLineHash": "839FE72A8BBF22513C97CAC9E9D31F5C"
           },
           "ruleId": "SBLW017"
         },
@@ -96,10 +96,10 @@
             }
           ],
           "message": {
-            "text": "SQL.Query: SQL injection TEST"
+            "text": "SQL.Query: SQL injection"
           },
           "partialFingerprints": {
-            "primaryLocationLineHash": "F4D16D9F4071D02ECA0BDCBD870A5317"
+            "primaryLocationLineHash": "F4D16D9F4071D02ECA0BDCBD870A5316"
           },
           "ruleId": "SBLW017"
         }
