@@ -356,7 +356,9 @@
                 "text": "# HTTPS\n\nWithout HTTPS, attackers in a privileged network position can intercept and modify traffic.\n\nSobelow detects missing HTTPS by checking the prod configuration.\n\nHTTPS checks can be ignored with the following command:\n\n    $ mix sobelow -i Config.HTTPS "
               },
               "id": "SBLW009",
-              "security-severity" : "9.7",
+              "properties" : {
+                 "security-severity" : "9.7"
+              },
               "name": "Config.HTTPS",
               "shortDescription": {
                 "text": "HTTPS Not Enabled updated in shortDesc"
