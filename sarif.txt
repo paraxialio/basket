@@ -21,7 +21,7 @@
             }
           ],
           "message": {
-            "text": "Config.HTTPS: HTTPS Not Enabled UPDATED"
+            "text": "Config.HTTPS: HTTPS Not Enabled UPDATED in message text"
           },
           "partialFingerprints": {
             "primaryLocationLineHash": "C15BCE8CAF49A8448E904E375BA0C396"
@@ -358,7 +358,7 @@
               "id": "SBLW009",
               "name": "Config.HTTPS",
               "shortDescription": {
-                "text": "HTTPS Not Enabled"
+                "text": "HTTPS Not Enabled updated in shortDesc"
               }
             },
             {
